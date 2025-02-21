@@ -1,17 +1,26 @@
 package com.github.LeilaM99.Librarary.Managment.System;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Library library = new Library();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        // افزودن کتاب‌ها
+        library.addBook(new Book("Java Programming", "John Doe", "1234567890"));
+        library.addBook(new Book("Data Structures", "Jane Smith", "0987654321"));
+
+        // افزودن اعضا
+        library.addMember(new Member("Alice", "M001"));
+        library.addMember(new Member("Bob", "M002"));
+
+        // امانت کتاب
+        boolean borrowed = library.borrowBook("1234567890", library.getMembers().get(0));
+        System.out.println("Borrowed: " + borrowed);
+
+        // عودت کتاب
+        boolean returned = library.returnBook("1234567890");
+        System.out.println("Returned: " + returned);
+
+
     }
 }

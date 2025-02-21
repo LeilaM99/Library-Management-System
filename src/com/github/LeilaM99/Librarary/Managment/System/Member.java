@@ -9,7 +9,6 @@ public class Member {
         this.memberId = memberId;
     }
 
-
     public String getName() { return name; }
     public String getMemberId() { return memberId; }
 }
