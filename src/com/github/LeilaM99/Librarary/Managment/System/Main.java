@@ -24,7 +24,7 @@ public class Main {
         library.editBook(0, new Book("Midnight Library", "Matt Haig", "ISBN001"));
 
         // edit mem
-        library.editMember(1, new Member("Updated Sogand", "M002"));
+        library.editMember(1, new Member("Sogand", "M002"));
 
         // redisplay mems and books
         System.out.println("\nUpdated Books in the library:");
