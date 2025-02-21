@@ -1,61 +1,63 @@
 package com.github.LeilaM99.Librarary.Managment.System;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Library {
+    private Book[] books;
+    private Member[] members;
+    private int bookCount;
+    private int memberCount;
 
-        private List<Book> books;
-        private List<Member> members;
+    public Library(int bookCapacity, int memberCapacity) {
+        books = new Book[bookCapacity];
+        members = new Member[memberCapacity];
+        bookCount = 0;
+        memberCount = 0;
+    }
 
-        public Library() {
-            books = new ArrayList<>();
-            members = new ArrayList<>();
+    public void addBook(Book book) {
+        if (bookCount < books.length) {
+            books[bookCount] = book;
+            bookCount++;
+        } else {
+            System.out.println("Library is full! Cannot add more books.");
         }
+    }
 
-        // متد برای اضافه کردن کتاب
-        public void addBook(Book book) {
-            books.add(book);
+    public void editBook(int index, Book newBook) {
+        if (index >= 0 && index < bookCount) {
+            books[index] = newBook;
+        } else {
+            System.out.println("Invalid book index.");
         }
+    }
 
-        // متد برای ویرایش اطلاعات کتاب
-        public void editBook(String isbn, String newTitle, String newAuthor) {
-            for (Book book : books) {
-                if (book.getIsbn().equals(isbn)) {
-                    book.setTitle(newTitle);
-                    book.setAuthor(newAuthor);
-                    break;
-                }
-            }
+    public void displayBooks() {
+        for (int i = 0; i < bookCount; i++) {
+            books[i].displayInfo();
         }
+    }
 
-        // متد برای ثبت عضو جدید
-        public void addMember(Member member) {
-            members.add(member);
-        }
 
-        // متد برای امانت کتاب
-        public boolean borrowBook(String isbn, Member member) {
-            for (Book book : books) {
-                if (book.getIsbn().equals(isbn) && book.isAvailable()) {
-                    book.setAvailable(false);
-                    return true; // امانت با موفقیت انجام شد
-                }
-            }
-            return false; // کتاب در دسترس نیست
+    public void addMember(Member member) {
+        if (memberCount < members.length) {
+            members[memberCount] = member;
+            memberCount++;
+        } else {
+            System.out.println("Member list is full! Cannot add more members.");
         }
+    }
 
-        // متد برای عودت کتاب
-        public boolean returnBook(String isbn) {
-            for (Book book : books) {
-                if (book.getIsbn().equals(isbn)) {
-                    book.setAvailable(true);
-                    return true; // عودت با موفقیت انجام شد
-                }
-            }
-            return false; // کتاب یافت نشد
+    public void editMember(int index, Member newMember) {
+        if (index >= 0 && index < memberCount) {
+            members[index] = newMember;
+        } else {
+            System.out.println("Invalid member index.");
         }
+    }
 
-        public List<Member> getMembers() {
-        return members;
+    public void displayMembers() {
+        for (int i = 0; i < memberCount; i++) {
+            members[i].displayInfo();
         }
+    }
+
 }

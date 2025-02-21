@@ -9,6 +9,15 @@ public class Member {
         this.memberId = memberId;
     }
 
-    public String getName() { return name; }
-    public String getMemberId() { return memberId; }
+    public String getName() {
+        return name;
+    }
+
+    public String getMemberId() {
+        return memberId;
+    }
+
+    public void displayInfo() {
+        System.out.println("Name: " + name + ", Member ID: " + memberId);
+    }
 }
