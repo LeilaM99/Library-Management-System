@@ -1,15 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="decef8d8-63e4-407d-bfc2-6b5967f7f56c" name="Changes" comment="" />
+    <list default="true" id="decef8d8-63e4-407d-bfc2-6b5967f7f56c" name="Changes" comment="update .gitignore file">
+      <change afterPath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "LeilaM99"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:LeilaM99/Library-Management-System.git",
+    "accountId": "3ddbe907-f1b1-4661-be4a-67fb6515938b"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 2
 }]]></component>
@@ -22,8 +50,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "Master",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/Leila/IdeaProjects/Library-Management-System/src/Main.java",
     "vue.rearranger.settings.migration": "true"
@@ -45,18 +78,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1740123615612</updated>
-      <workItem from="1740123616558" duration="1000" />
+      <workItem from="1740123616558" duration="1432000" />
     </task>
+    <task id="LOCAL‎−۰۰۰۰۱" summary="update .gitignore file">
+      <option name="closed" value="true" />
+      <created>1740123685111</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۱" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۱" />
+      <updated>1740123685111</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update .gitignore file" />
+    <option name="LAST_COMMIT_MESSAGE" value="update .gitignore file" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/Main.java</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
