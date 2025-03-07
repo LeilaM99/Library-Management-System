@@ -6,6 +6,7 @@ public class Library {
     private int bookCount;
     private int memberCount;
 
+
     public Library(int bookCapacity, int memberCapacity) {
         books = new Book[bookCapacity];
         members = new Member[memberCapacity];
@@ -13,13 +14,12 @@ public class Library {
         memberCount = 0;
     }
 
+    public Library() {
+
+    }
+
     public void addBook(Book book) {
-        if (bookCount < books.length) {
-            books[bookCount] = book;
-            bookCount++;
-        } else {
-            System.out.println("Library is full! Cannot add more books.");
-        }
+
     }
 
     public void editBook(int index, Book newBook) {
@@ -29,6 +29,20 @@ public class Library {
             System.out.println("Invalid book index.");
         }
     }
+
+    public void removeBook(String title) {
+        for (int i = 0; i < bookCount; i++) {
+            if (books[i].getTitle().equalsIgnoreCase(title)) {
+                books[i] = books[bookCount - 1];
+                books[bookCount - 1] = null;
+                bookCount--;
+                System.out.println("Book removed: " + title);
+                return;
+            }
+        }
+        System.out.println("Book not found: " + title);
+    }
+
 
     public void displayBooks() {
         for (int i = 0; i < bookCount; i++) {
@@ -58,6 +72,28 @@ public class Library {
         for (int i = 0; i < memberCount; i++) {
             members[i].displayInfo();
         }
+    }
+
+    public void checkOutBook(String title) {
+        for (int i = 0; i < bookCount; i++) {
+            if (books[i].getTitle().equalsIgnoreCase(title) && !books[i].isCheckedOut()) {
+                books[i].checkOut();
+                System.out.println("You have checked out: " + title);
+                return;
+            }
+        }
+        System.out.println("Book not available for checkout.");
+    }
+
+    public void returnBook(String title) {
+        for (int i = 0; i < bookCount; i++) {
+            if (books[i].getTitle().equalsIgnoreCase(title) && books[i].isCheckedOut()) {
+                books[i].returnBook();
+                System.out.println("You have returned: " + title);
+                return;
+            }
+        }
+        System.out.println("This book was not checked out.");
     }
 
 }

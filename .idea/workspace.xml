@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="decef8d8-63e4-407d-bfc2-6b5967f7f56c" name="Changes" comment="update .gitignore file">
-      <change afterPath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/Library.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/Main.java" afterDir="false" />
+    <list default="true" id="decef8d8-63e4-407d-bfc2-6b5967f7f56c" name="Changes" comment="update classes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,44 +23,50 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Update" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "LeilaM99"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LeilaM99&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:LeilaM99/Library-Management-System.git",
-    "accountId": "3ddbe907-f1b1-4661-be4a-67fb6515938b"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:LeilaM99/Library-Management-System.git&quot;,
+    &quot;accountId&quot;: &quot;3ddbe907-f1b1-4661-be4a-67fb6515938b&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2tLFnU25Wp1gJtwPGv8AwmW6DVA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/Leila/IdeaProjects/Library-Management-System/src/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Leila/IdeaProjects/Library-Management-System/src/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -78,7 +83,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1740123615612</updated>
-      <workItem from="1740123616558" duration="1432000" />
+      <workItem from="1740123616558" duration="4322000" />
+      <workItem from="1740134682771" duration="1634000" />
+      <workItem from="1740406015237" duration="1242000" />
+      <workItem from="1740725223593" duration="36000" />
+      <workItem from="1741301502839" duration="4114000" />
     </task>
     <task id="LOCAL‎−۰۰۰۰۱" summary="update .gitignore file">
       <option name="closed" value="true" />
@@ -87,25 +96,79 @@
       <option name="presentableId" value="LOCAL‎−۰۰۰۰۱" />
       <updated>1740123685111</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL‎−۰۰۰۰۲" summary="push Book class">
+      <option name="closed" value="true" />
+      <created>1740125083423</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۲" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۲" />
+      <updated>1740125083423</updated>
+    </task>
+    <task id="LOCAL‎−۰۰۰۰۳" summary="push member class">
+      <option name="closed" value="true" />
+      <created>1740125133003</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۳" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۳" />
+      <updated>1740125133003</updated>
+    </task>
+    <task id="LOCAL‎−۰۰۰۰۴" summary="push library and main class">
+      <option name="closed" value="true" />
+      <created>1740125503664</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۴" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۴" />
+      <updated>1740125503664</updated>
+    </task>
+    <task id="LOCAL‎−۰۰۰۰۵" summary="update library and main class">
+      <option name="closed" value="true" />
+      <created>1740125758681</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۵" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۵" />
+      <updated>1740125758681</updated>
+    </task>
+    <task id="LOCAL‎−۰۰۰۰۶" summary="update library and main class">
+      <option name="closed" value="true" />
+      <created>1740125838805</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۶" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۶" />
+      <updated>1740125838805</updated>
+    </task>
+    <task id="LOCAL‎−۰۰۰۰۷" summary="update classes">
+      <option name="closed" value="true" />
+      <created>1740126899575</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۷" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۷" />
+      <updated>1740126899575</updated>
+    </task>
+    <task id="LOCAL‎−۰۰۰۰۸" summary="update classes">
+      <option name="closed" value="true" />
+      <created>1740127383106</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۸" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۸" />
+      <updated>1740127383106</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update .gitignore file" />
-    <option name="LAST_COMMIT_MESSAGE" value="update .gitignore file" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/Main.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="push Book class" />
+    <MESSAGE value="push member class" />
+    <MESSAGE value="push library and main class" />
+    <MESSAGE value="update library and main class" />
+    <MESSAGE value="update classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="update classes" />
   </component>
 </project>

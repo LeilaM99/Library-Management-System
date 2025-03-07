@@ -5,11 +5,13 @@ public class Book {
         private String title;
         private String author;
         private String isbn;
+        private boolean isCheckedOut;
 
         public Book(String title, String author, String isbn) {
             this.title = title;
             this.author = author;
             this.isbn = isbn;
+            this.isCheckedOut = false;
         }
 
         public String getTitle() {
@@ -24,11 +26,20 @@ public class Book {
             return isbn;
         }
 
+        public boolean isCheckedOut() {
+        return isCheckedOut;
+        }
+
+         public void checkOut() {
+        isCheckedOut = true;
+         }
+
+         public void returnBook() {
+         isCheckedOut = false;
+         }
+
         public void displayInfo() {
             System.out.println("Title: " + title + ", Author: " + author + ", ISBN: " + isbn);
         }
-
-
-
 
 }
