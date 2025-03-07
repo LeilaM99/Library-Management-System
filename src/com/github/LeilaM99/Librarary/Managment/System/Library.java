@@ -18,8 +18,14 @@ public class Library {
 
     }
 
-    public void addBook(Book book) {
-
+    public void addBook(int index,Book book) {
+        if (index < books.length) {
+            books[index] = book;
+            bookCount++;
+            System.out.println(  book + "added to the library");
+        } else {
+            System.out.println("Its full");
+        }
     }
 
     public void editBook(int index, Book newBook) {

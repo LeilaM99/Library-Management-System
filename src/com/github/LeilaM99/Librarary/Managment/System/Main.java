@@ -6,8 +6,8 @@ public class Main {
         Library library = new Library(5, 5);
 
         // add book
-        library.addBook(new Book("Midnight Xrary", "Mat Haig", "ISBN001"));
-        library.addBook(new Book("Johnathan Livingston seagull", "Richard Bach", "ISBN002"));
+        library.addBook(0,new Book("Midnight Xrary", "Mat Haig", "ISBN001"));
+        library.addBook(1,new Book("Johnathan Livingston seagull", "Richard Bach", "ISBN002"));
 
         // add member
         library.addMember(new Member("Lili", "M001"));
