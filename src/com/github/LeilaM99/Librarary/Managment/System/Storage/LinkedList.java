@@ -1,8 +1,8 @@
-package com.github.LeilaM99.Librarary.Managment.System;
+package com.github.LeilaM99.Librarary.Managment.System.Storage;
 
 public class LinkedList<T> {
 
-        private Node<T> head;
+        public Node<T> head;
 
         public LinkedList() {
             head = null;

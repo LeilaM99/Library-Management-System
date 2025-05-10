@@ -1,8 +1,10 @@
 package com.github.LeilaM99.Librarary.Managment.System;
 
+import com.github.LeilaM99.Librarary.Managment.System.Storage.Node;
+
 import java.util.Scanner;
 
-public class Main {
+public class LibraryImp {
     private static Scanner scanner = new Scanner(System.in);
     private static Library library = new Library();
 
@@ -14,7 +16,7 @@ public class Main {
             handleChoice(choice);
         } while (choice != 0);
 
-        System.out.println("Exiting program. Goodbye!");
+        System.out.println("Exiting program.");
     }
 
     private static void printMenu() {
@@ -164,7 +166,7 @@ public class Main {
             scanner.next();
         }
         int value = scanner.nextInt();
-        scanner.nextLine(); // clear buffer
+        scanner.nextLine();
         return value;
     }
 }
