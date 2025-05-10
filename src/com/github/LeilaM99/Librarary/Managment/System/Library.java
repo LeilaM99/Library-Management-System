@@ -1,105 +1,94 @@
 package com.github.LeilaM99.Librarary.Managment.System;
 
 public class Library {
-    private Book[] books;
-    private Member[] members;
-    private int bookCount;
-    private int memberCount;
-
-
-    public Library(int bookCapacity, int memberCapacity) {
-        books = new Book[bookCapacity];
-        members = new Member[memberCapacity];
-        bookCount = 0;
-        memberCount = 0;
-    }
+    LinkedList<Book> books;
+    LinkedList<User> users;
 
     public Library() {
-
+        books = LibraryStorage.loadBooks();
+        users = LibraryStorage.loadUsers();
     }
 
-    public void addBook(int index,Book book) {
-        if (index < books.length) {
-            books[index] = book;
-            bookCount++;
-            System.out.println(  book + "added to the library");
-        } else {
-            System.out.println("Its full");
+    public void addBook(Book book) {
+        books.add(book);
+        LibraryStorage.saveBooks(books);
+    }
+
+    public void removeBook(Book book) {
+        books.remove(book);
+        LibraryStorage.saveBooks(books);
+    }
+
+    public void updateBook(Book oldBook, String newTitle, String newAuthor) {
+        Book book = books.search(oldBook);
+        if (book != null) {
+            book.updateBook(newTitle, newAuthor);
+            LibraryStorage.saveBooks(books);
         }
     }
 
-    public void editBook(int index, Book newBook) {
-        if (index >= 0 && index < bookCount) {
-            books[index] = newBook;
-        } else {
-            System.out.println("Invalid book index.");
+    public void addUser(User user) {
+        users.add(user);
+        LibraryStorage.saveUsers(users);
+    }
+
+    public void removeUser(User user) {
+        users.remove(user);
+        LibraryStorage.saveUsers(users);
+    }
+
+    public void updateUser(User oldUser, String newName, Gender newGender) {
+        User user = users.search(oldUser);
+        if (user != null) {
+            user.updateUser(newName, newGender);
+            LibraryStorage.saveUsers(users);
         }
     }
 
-    public void removeBook(String title) {
-        for (int i = 0; i < bookCount; i++) {
-            if (books[i].getTitle().equalsIgnoreCase(title)) {
-                books[i] = books[bookCount - 1];
-                books[bookCount - 1] = null;
-                bookCount--;
-                System.out.println("Book removed: " + title);
-                return;
+    public void borrowBook(User user, Book book) {
+        if (!book.isBorrowed()) {
+            book.setBorrowed(true);
+            LibraryStorage.saveBooks(books);
+            System.out.println(user.getName() + " borrowed: " + book.getTitle());
+        } else {
+            System.out.println("The book is already borrowed.");
+        }
+    }
+
+    public void returnBook(User user, Book book) {
+        if (book.isBorrowed()) {
+            book.setBorrowed(false);
+            LibraryStorage.saveBooks(books);
+            System.out.println(user.getName() + " returned: " + book.getTitle());
+        } else {
+            System.out.println("The book was not borrowed.");
+        }
+    }
+
+    public void displayAvailableBooks() {
+        System.out.println("Available Books:");
+        Node<Book> temp = books.head;
+        while (temp != null) {
+            if (!temp.data.isBorrowed()) {
+                System.out.println(temp.data);
             }
-        }
-        System.out.println("Book not found: " + title);
-    }
-
-
-    public void displayBooks() {
-        for (int i = 0; i < bookCount; i++) {
-            books[i].displayInfo();
+            temp = temp.next;
         }
     }
 
-
-    public void addMember(Member member) {
-        if (memberCount < members.length) {
-            members[memberCount] = member;
-            memberCount++;
-        } else {
-            System.out.println("Member list is full! Cannot add more members.");
-        }
-    }
-
-    public void editMember(int index, Member newMember) {
-        if (index >= 0 && index < memberCount) {
-            members[index] = newMember;
-        } else {
-            System.out.println("Invalid member index.");
-        }
-    }
-
-    public void displayMembers() {
-        for (int i = 0; i < memberCount; i++) {
-            members[i].displayInfo();
-        }
-    }
-
-    public void checkOutBook(String title) {
-        for (int i = 0; i < bookCount; i++) {
-            if (books[i].getTitle().equalsIgnoreCase(title) && !books[i].isCheckedOut()) {
-                books[i].checkOut();
-                System.out.println("You have checked out: " + title);
-                return;
+    public void displayBorrowedBooks() {
+        System.out.println("Borrowed Books:");
+        Node<Book> temp = books.head;
+        while (temp != null) {
+            if (temp.data.isBorrowed()) {
+                System.out.println(temp.data);
             }
+            temp = temp.next;
         }
-        System.out.println("Book not available for checkout.");
     }
 
-    public void returnBook(String title) {
-        for (int i = 0; i < bookCount; i++) {
-            if (books[i].getTitle().equalsIgnoreCase(title) && books[i].isCheckedOut()) {
-                books[i].returnBook();
-                System.out.println("You have returned: " + title);
-                return;
-            }
-        }
-        System.out.println("This book was not checked out.");
+    public void displayUsers() {
+        System.out.println("Users:");
+        users.display();
     }
-
 }
