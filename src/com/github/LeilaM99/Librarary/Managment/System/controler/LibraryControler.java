@@ -1,10 +1,14 @@
-package com.github.LeilaM99.Librarary.Managment.System;
+package com.github.LeilaM99.Librarary.Managment.System.controler;
 
-import com.github.LeilaM99.Librarary.Managment.System.Storage.Node;
+import com.github.LeilaM99.Librarary.Managment.System.dS.Node;
+import com.github.LeilaM99.Librarary.Managment.System.entity.Book;
+import com.github.LeilaM99.Librarary.Managment.System.entity.Gender;
+import com.github.LeilaM99.Librarary.Managment.System.entity.User;
+import com.github.LeilaM99.Librarary.Managment.System.service.Library;
 
 import java.util.Scanner;
 
-public class LibraryImp {
+public class LibraryControler {
     private static Scanner scanner = new Scanner(System.in);
     private static Library library = new Library();
 

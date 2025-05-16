@@ -1,8 +1,10 @@
-package com.github.LeilaM99.Librarary.Managment.System.Storage;
+package com.github.LeilaM99.Librarary.Managment.System.dAO;
 
-import com.github.LeilaM99.Librarary.Managment.System.Book;
-import com.github.LeilaM99.Librarary.Managment.System.Gender;
-import com.github.LeilaM99.Librarary.Managment.System.User;
+import com.github.LeilaM99.Librarary.Managment.System.entity.Book;
+import com.github.LeilaM99.Librarary.Managment.System.dS.LinkedList;
+import com.github.LeilaM99.Librarary.Managment.System.dS.Node;
+import com.github.LeilaM99.Librarary.Managment.System.entity.Gender;
+import com.github.LeilaM99.Librarary.Managment.System.entity.User;
 
 import java.io.*;
 

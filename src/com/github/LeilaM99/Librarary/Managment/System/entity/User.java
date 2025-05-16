@@ -1,4 +1,4 @@
-package com.github.LeilaM99.Librarary.Managment.System;
+package com.github.LeilaM99.Librarary.Managment.System.entity;
 
 public class User {
     private String name;

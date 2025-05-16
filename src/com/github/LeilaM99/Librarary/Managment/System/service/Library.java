@@ -1,8 +1,11 @@
-package com.github.LeilaM99.Librarary.Managment.System;
+package com.github.LeilaM99.Librarary.Managment.System.service;
 
-import com.github.LeilaM99.Librarary.Managment.System.Storage.LibraryStorage;
-import com.github.LeilaM99.Librarary.Managment.System.Storage.LinkedList;
-import com.github.LeilaM99.Librarary.Managment.System.Storage.Node;
+import com.github.LeilaM99.Librarary.Managment.System.dAO.LibraryStorage;
+import com.github.LeilaM99.Librarary.Managment.System.dS.LinkedList;
+import com.github.LeilaM99.Librarary.Managment.System.dS.Node;
+import com.github.LeilaM99.Librarary.Managment.System.entity.Book;
+import com.github.LeilaM99.Librarary.Managment.System.entity.Gender;
+import com.github.LeilaM99.Librarary.Managment.System.entity.User;
 
 public class Library {
     LinkedList<Book> books;
