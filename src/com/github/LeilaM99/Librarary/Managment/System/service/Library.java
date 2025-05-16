@@ -8,8 +8,8 @@ import com.github.LeilaM99.Librarary.Managment.System.entity.Gender;
 import com.github.LeilaM99.Librarary.Managment.System.entity.User;
 
 public class Library {
-    LinkedList<Book> books;
-    LinkedList<User> users;
+    public LinkedList<Book> books;
+    public LinkedList<User> users;
 
     public Library() {
         books = LibraryStorage.loadBooks();
