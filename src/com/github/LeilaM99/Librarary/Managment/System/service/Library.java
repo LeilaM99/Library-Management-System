@@ -1,6 +1,6 @@
 package com.github.LeilaM99.Librarary.Managment.System.service;
 
-import com.github.LeilaM99.Librarary.Managment.System.dAO.LibraryStorage;
+import com.github.LeilaM99.Librarary.Managment.System.dAO.Storage;
 import com.github.LeilaM99.Librarary.Managment.System.dS.LinkedList;
 import com.github.LeilaM99.Librarary.Managment.System.dS.Node;
 import com.github.LeilaM99.Librarary.Managment.System.entity.Book;
@@ -12,50 +12,50 @@ public class Library {
     public LinkedList<User> users;
 
     public Library() {
-        books = LibraryStorage.loadBooks();
-        users = LibraryStorage.loadUsers();
+        books = Storage.loadBooks();
+        users = Storage.loadUsers();
     }
 
     public void addBook(Book book) {
         books.add(book);
-        LibraryStorage.saveBooks(books);
+        Storage.saveBooks(books);
     }
 
     public void removeBook(Book book) {
         books.remove(book);
-        LibraryStorage.saveBooks(books);
+        Storage.saveBooks(books);
     }
 
     public void updateBook(Book oldBook, String newTitle, String newAuthor) {
         Book book = books.search(oldBook);
         if (book != null) {
             book.updateBook(newTitle, newAuthor);
-            LibraryStorage.saveBooks(books);
+            Storage.saveBooks(books);
         }
     }
 
     public void addUser(User user) {
         users.add(user);
-        LibraryStorage.saveUsers(users);
+        Storage.saveUsers(users);
     }
 
     public void removeUser(User user) {
         users.remove(user);
-        LibraryStorage.saveUsers(users);
+        Storage.saveUsers(users);
     }
 
     public void updateUser(User oldUser, String newName, Gender newGender) {
         User user = users.search(oldUser);
         if (user != null) {
             user.updateUser(newName, newGender);
-            LibraryStorage.saveUsers(users);
+            Storage.saveUsers(users);
         }
     }
 
     public void borrowBook(User user, Book book) {
         if (!book.isBorrowed()) {
             book.setBorrowed(true);
-            LibraryStorage.saveBooks(books);
+            Storage.saveBooks(books);
             System.out.println(user.getName() + " borrowed: " + book.getTitle());
         } else {
             System.out.println("The book is already borrowed.");
@@ -65,7 +65,7 @@ public class Library {
     public void returnBook(User user, Book book) {
         if (book.isBorrowed()) {
             book.setBorrowed(false);
-            LibraryStorage.saveBooks(books);
+            Storage.saveBooks(books);
             System.out.println(user.getName() + " returned: " + book.getTitle());
         } else {
             System.out.println("The book was not borrowed.");

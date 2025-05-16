@@ -1,6 +1,8 @@
 package com.github.LeilaM99.Librarary.Managment.System.dS;
 
-public class LinkedList<T> {
+import java.io.Serializable;
+
+public class LinkedList<T> implements Serializable {
 
         public Node<T> head;
 

@@ -1,8 +1,10 @@
 package com.github.LeilaM99.Librarary.Managment.System.dS;
 
-public class Node <T>{
+import java.io.Serializable;
 
-        public T data;
+public class Node<T> implements Serializable {
+
+    public T data;
         public Node<T> next;
 
         public Node(T data) {

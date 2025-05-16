@@ -1,6 +1,7 @@
 package com.github.LeilaM99.Librarary.Managment.System.entity;
+import java.io.Serializable;
 
-public class User {
+public class User implements Serializable {
     private String name;
     private int userId;
     private Gender gender;
