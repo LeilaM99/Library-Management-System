@@ -153,16 +153,20 @@ public class LibraryControler {
             throw new InvalidInputException("Invalid gender. Use MALE or FEMALE.");
         }
     }
-
-    private static Book findBookByTitle(String title) {
+/// / exception ??
+    private static Book findBookByTitle(String title) throws NotFoundException {
         Node<Book> current = library.books.head;
-        while (current != null) {
-            if (current.data.getTitle().equalsIgnoreCase(title)) {
-                return current.data;
+        try {
+            while (current != null) {
+                if (current.data.getTitle().equalsIgnoreCase(title)) {
+                    return current.data;
+                }
+                current = current.next;
             }
-            current = current.next;
         }
-        System.out.println("Book not found.");
+        catch (NullPointerException e) {
+            throw new NotFoundException("Book not found.");
+        }
         return null;
     }
 

@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="decef8d8-63e4-407d-bfc2-6b5967f7f56c" name="Changes" comment="packaging">
-      <change afterPath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/exception/InvalidInputException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/exception/NotFoundException.java" afterDir="false" />
+    <list default="true" id="decef8d8-63e4-407d-bfc2-6b5967f7f56c" name="Changes" comment="Exception handling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/controler/LibraryControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/controler/LibraryControler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/service/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/LeilaM99/Librarary/Managment/System/service/Library.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +101,7 @@
       <workItem from="1744651804462" duration="932000" />
       <workItem from="1746883752326" duration="2124000" />
       <workItem from="1746885903800" duration="5309000" />
-      <workItem from="1747383519558" duration="3703000" />
+      <workItem from="1747383519558" duration="4386000" />
     </task>
     <task id="LOCAL‎−۰۰۰۰۱" summary="update .gitignore file">
       <option name="closed" value="true" />
@@ -197,7 +194,14 @@
       <option name="presentableId" value="LOCAL‎−۰۰۰۱۳" />
       <updated>1747384947117</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL‎−۰۰۰۱۴" summary="Exception handling">
+      <option name="closed" value="true" />
+      <created>1747388037775</created>
+      <option name="number" value="LOCAL‎−۰۰۰۱۴" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۱۴" />
+      <updated>1747388037775</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +227,7 @@
     <MESSAGE value="update classes" />
     <MESSAGE value="update with linked list" />
     <MESSAGE value="packaging" />
-    <option name="LAST_COMMIT_MESSAGE" value="packaging" />
+    <MESSAGE value="Exception handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exception handling" />
   </component>
 </project>
