@@ -16,18 +16,7 @@ public class Library {
     BookStorage bookStorage = new BookStorage();
     UserStorage userStorage = new UserStorage();
 
-//        @Override
-//        public void save(LinkedList list) {
-//
-//        }
-//
-//        @Override
-//        public LinkedList load() {
-//            return null;
-//        }
-
     public Library() {
-        /// /????
         books = bookStorage.load();
         users = userStorage.load();
     }
