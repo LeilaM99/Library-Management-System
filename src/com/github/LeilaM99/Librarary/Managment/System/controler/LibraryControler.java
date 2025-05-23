@@ -2,7 +2,7 @@ package com.github.LeilaM99.Librarary.Managment.System.controler;
 
 import com.github.LeilaM99.Librarary.Managment.System.dS.Node; import com.github.LeilaM99.Librarary.Managment.System.entity.Book; import com.github.LeilaM99.Librarary.Managment.System.entity.Gender; import com.github.LeilaM99.Librarary.Managment.System.entity.User; import com.github.LeilaM99.Librarary.Managment.System.exception.InvalidInputException; import com.github.LeilaM99.Librarary.Managment.System.exception.NotFoundException; import com.github.LeilaM99.Librarary.Managment.System.service.Library;
 
-import java.util.InputMismatchException; import java.util.Scanner;
+import java.util.Scanner;
 
 public class LibraryControler {
     private static Scanner scanner = new Scanner(System.in);

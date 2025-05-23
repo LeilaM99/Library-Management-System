@@ -12,6 +12,7 @@ public class UserStorage extends Storage<User> {
         super("users.ser");
     }
 
+    @Override
     public void save(LinkedList<User> list) {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fileName))) {
             oos.writeObject(list);
@@ -20,6 +21,7 @@ public class UserStorage extends Storage<User> {
         }
     }
 
+    @Override
     public LinkedList<User> load() {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fileName))) {
             return (LinkedList<User>) ois.readObject();
@@ -28,5 +30,4 @@ public class UserStorage extends Storage<User> {
             return new LinkedList<>();
         }
     }
-}
 }

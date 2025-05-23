@@ -13,5 +13,5 @@ public abstract class Storage<T> {
     public abstract void save(LinkedList<T> list);
 
 
-    public abstract LinkedList<T> load()
+    public abstract LinkedList<T> load();
 }

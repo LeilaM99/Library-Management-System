@@ -8,7 +8,6 @@ import java.io.*;
 public class BookStorage extends Storage<Book> {
 
     public BookStorage() {
-
         super("books.ser");
     }
 
@@ -21,6 +20,7 @@ public class BookStorage extends Storage<Book> {
         }
     }
 
+    @Override
     public LinkedList<Book> load() {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fileName))) {
             return (LinkedList<Book>) ois.readObject();
@@ -29,5 +29,4 @@ public class BookStorage extends Storage<Book> {
             return new LinkedList<>();
         }
     }
-}
 }
